@@ -76,13 +76,14 @@ class _ButtonsView extends StatelessWidget {
               icon: const Icon(Icons.backpack_outlined),
               label: Text('Text Button Icon')
             ),
+            const _CustomButton(),
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.app_registration_rounded)
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.app_registration_rounded),
+              icon: const Icon(Icons.app_registration_rounded),
               style: ButtonStyle(
                 backgroundColor: WidgetStatePropertyAll(colors.primary),
                 iconColor: WidgetStatePropertyAll(Colors.white)
@@ -90,6 +91,27 @@ class _ButtonsView extends StatelessWidget {
             )
           ]
         )
+      ),
+    );
+  }
+}
+
+class _CustomButton extends StatelessWidget {
+  const _CustomButton();
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: Material(
+        color: Colors.deepPurple,
+        child: InkWell(
+          onTap: () {},
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Text('Custom Button', style: TextStyle(color: Colors.white))
+          ),
+        ),
       ),
     );
   }
