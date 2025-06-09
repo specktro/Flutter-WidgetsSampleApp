@@ -26,5 +26,18 @@ const List<MenuItem> appMenuItems = [
       subtitle: 'A stylized container',
       link: '/cards',
       icon: Icons.credit_card
+  ),
+  MenuItem(
+      title: 'Animated',
+      subtitle: 'Animated screen',
+      link: '/animated',
+      icon: Icons.deck_outlined
   )
 ];
+
+// GoRoute(path: '/animated', builder: (context, state) => const AnimatedScreen()),
+// GoRoute(path: '/tutorial', builder: (context, state) => const AppTutorialScreen()),
+// GoRoute(path: '/infinite', builder: (context, state) => const InfiniteScrollScreen()),
+// GoRoute(path: '/progress', builder: (context, state) => const ProgressScreen()),
+// GoRoute(path: '/snackbar', builder: (context, state) => const SnackBarScreen()),
+// GoRoute(path: '/ui-controls', builder: (context, state) => const UiControlsScreen()),
