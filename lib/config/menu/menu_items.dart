@@ -28,10 +28,10 @@ const List<MenuItem> appMenuItems = [
       icon: Icons.credit_card
   ),
   MenuItem(
-      title: 'Animated',
-      subtitle: 'Animated screen',
-      link: '/animated',
-      icon: Icons.deck_outlined
+      title: 'Progress Indicators',
+      subtitle: 'Standard and controlled',
+      link: '/progress',
+      icon: Icons.refresh_rounded
   )
 ];
 
