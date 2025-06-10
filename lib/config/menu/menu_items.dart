@@ -44,12 +44,11 @@ const List<MenuItem> appMenuItems = [
       subtitle: 'Animated stateful widget',
       link: '/animated',
       icon: Icons.check_box_outlined
+  ),
+  MenuItem(
+      title: 'UI Controls + Tiles',
+      subtitle: 'Some flutter controls',
+      link: '/ui-controls',
+      icon: Icons.car_rental_outlined
   )
 ];
-
-// GoRoute(path: '/animated', builder: (context, state) => const AnimatedScreen()),
-// GoRoute(path: '/tutorial', builder: (context, state) => const AppTutorialScreen()),
-// GoRoute(path: '/infinite', builder: (context, state) => const InfiniteScrollScreen()),
-// GoRoute(path: '/progress', builder: (context, state) => const ProgressScreen()),
-// GoRoute(path: '/snackbar', builder: (context, state) => const SnackBarScreen()),
-// GoRoute(path: '/ui-controls', builder: (context, state) => const UiControlsScreen()),
