@@ -8,12 +8,15 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final key = GlobalKey<ScaffoldState>();
+
     return Scaffold(
+      key: key,
       appBar: AppBar(
         title: const Text('Flutter and material widgets')
       ),
       body: const _HomeView(),
-      drawer: const SideMenu(),
+      drawer: SideMenu(scaffoldKey: key),
     );
   }
 }
