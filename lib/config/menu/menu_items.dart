@@ -16,6 +16,12 @@ class MenuItem {
 
 const List<MenuItem> appMenuItems = [
   MenuItem(
+      title: 'Riverpod Counter',
+      subtitle: 'Introduction to Riverpod',
+      link: '/counter',
+      icon: Icons.numbers
+  ),
+  MenuItem(
     title: 'Buttons',
     subtitle: 'Different kinds of buttons',
     link: '/buttons',
