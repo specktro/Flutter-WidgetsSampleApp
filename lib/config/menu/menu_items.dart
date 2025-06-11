@@ -68,5 +68,11 @@ const List<MenuItem> appMenuItems = [
       subtitle: 'Infinite list and pull to refresh',
       link: '/infinite',
       icon: Icons.list_alt_rounded
+  ),
+  MenuItem(
+      title: 'Change your theme',
+      subtitle: 'A simple theme changer screen with riverpod',
+      link: '/theme_changer',
+      icon: Icons.color_lens_outlined
   )
 ];
