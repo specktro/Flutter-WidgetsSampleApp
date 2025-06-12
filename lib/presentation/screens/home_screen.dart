@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
-import 'package:widgets_app/presentation/screens/buttons_screen.dart';
+import 'package:widgets_app/presentation/widgets/side_menu.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final key = GlobalKey<ScaffoldState>();
+
     return Scaffold(
+      key: key,
       appBar: AppBar(
         title: const Text('Flutter and material widgets')
       ),
       body: const _HomeView(),
+      drawer: SideMenu(scaffoldKey: key),
     );
   }
 }
@@ -44,7 +49,7 @@ class _CustomListTile extends StatelessWidget {
         title: Text(menuItem.title),
         subtitle: Text(menuItem.subtitle),
         onTap: () {
-          Navigator.pushNamed(context, menuItem.link);
+          context.push(menuItem.link);
         }
     );
   }
